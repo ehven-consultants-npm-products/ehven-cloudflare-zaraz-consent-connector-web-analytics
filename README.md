@@ -16,3 +16,13 @@ accepted-state performance require native acceptance; a generated tag is not pro
 of ingestion. No runtime npm dependencies. Node 24+ for recipe generation.
 
 Support continued development through [Ehven Consultants](https://ehven.com/contact/).
+
+After publication, install into the host project:
+
+```sh
+npm install @ehven/cloudflare-zaraz-consent-connector-web-analytics
+```
+
+Requires Node.js 24+ for server-side recipe generation.
+Report reproducible issues through the repository issue tracker. Keep cookie values,
+credentials, identities and private form contents out of reports. Support is best effort.
