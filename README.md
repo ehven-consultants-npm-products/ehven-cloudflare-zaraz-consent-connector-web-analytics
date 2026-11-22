@@ -14,3 +14,5 @@ No inline JavaScript loader or second browser bootstrap is included. The standar
 tag disables SPA measurement. Actual provider requests, property ingestion and
 accepted-state performance require native acceptance; a generated tag is not proof
 of ingestion. No runtime npm dependencies. Node 24+ for recipe generation.
+
+Support continued development through [Ehven Consultants](https://ehven.com/contact/).

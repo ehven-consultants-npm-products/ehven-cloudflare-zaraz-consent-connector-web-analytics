@@ -8,9 +8,9 @@
   },
   "sideEffects": false,
   "files": [
-    "src/*.mjs",
-    "src/*.astro",
-    "types/*.d.ts"
+    "src/index.mjs",
+    "types/index.d.ts",
+    "CHANGELOG.md"
   ],
   "exports": {
     ".": {
@@ -24,5 +24,24 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ehven-consultants-npm-products/ehven-cloudflare-zaraz-consent-connector-web-analytics.git"
-  }
+  },
+  "description": "Cloudflare Web Analytics native tool recipes for the Zaraz consent controller.",
+  "author": "Gilad Ehven",
+  "homepage": "https://github.com/ehven-consultants-npm-products/ehven-cloudflare-zaraz-consent-connector-web-analytics#readme",
+  "bugs": {
+    "url": "https://github.com/ehven-consultants-npm-products/ehven-cloudflare-zaraz-consent-connector-web-analytics/issues"
+  },
+  "funding": {
+    "type": "custom",
+    "url": "https://ehven.com/contact/"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "cloudflare",
+    "zaraz",
+    "consent",
+    "web-analytics"
+  ]
 }
