@@ -1,3 +1,16 @@
-# ehven-cloudflare-zaraz-consent-connector-web-analytics
+# Cloudflare Web Analytics connector
 
-Development candidate extracted for explicit composition with the Zaraz consent controller core. No npm release is available yet.
+Development candidate for `@ehven/cloudflare-zaraz-consent-connector-web-analytics`.
+Supplies the provider-specific external beacon tag and purpose-owned native Zaraz
+Custom HTML recipe. It does not inject scripts or enable a property by itself.
+
+Call `webAnalyticsTool({token, purpose, triggers?})` and place the returned entry
+in the core configuration's `tools` map. Supply a public 32-character lowercase
+hexadecimal RUM property token and an explicit declared purpose. Default firing
+trigger is `Pageview`. The core validates references and enforces scope/consent.
+
+The native catalog identifier is `html`, with `execute_unsafe_scripts` permission.
+No inline JavaScript loader or second browser bootstrap is included. The standard
+tag disables SPA measurement. Actual provider requests, property ingestion and
+accepted-state performance require native acceptance; a generated tag is not proof
+of ingestion. No runtime npm dependencies. Node 24+ for recipe generation.
