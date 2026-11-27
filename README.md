@@ -1,7 +1,6 @@
 # Cloudflare Web Analytics connector
 
-Development candidate for `@ehven/cloudflare-zaraz-consent-connector-web-analytics`.
-Supplies the provider-specific external beacon tag and purpose-owned native Zaraz
+This connector supplies the provider-specific external beacon tag and purpose-owned native Zaraz
 Custom HTML recipe. It does not inject scripts or enable a property by itself.
 
 Call `webAnalyticsTool({token, purpose, triggers?})` and place the returned entry
@@ -17,7 +16,7 @@ of ingestion. No runtime npm dependencies. Node 24+ for recipe generation.
 
 Support continued development through [Ehven Consultants](https://ehven.com/contact/).
 
-After publication, install into the host project:
+Install the package in the host project:
 
 ```sh
 npm install @ehven/cloudflare-zaraz-consent-connector-web-analytics
